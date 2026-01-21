@@ -20,43 +20,64 @@ body {
 }
 .container {
   width: 100%;
-  overflow: hidden;
 }
 header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #ffffff;
+  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header .left_header,
 .right_header {
   display: flex;
   align-items: center;
-  gap: 40px;
+  /* justify-content: flex-end; */
 }
 header .center ul {
   display: flex;
   gap: 30px;
   list-style-type: none;
   text-decoration: none;
+  justify-content: end;
 }
 header .center ul li {
-  background-color: #ffa07a;
-  padding: 10px 12px;
+  background-color: #276574;
+  padding: 10px 15px;
+  border-radius: 15px;
 }
+header .center ul li a {
+  margin: 0px 2px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+
+  justify-content: space-between;
+}
+header .center ul li:hover,
+header .center ul li a:hover {
+  background-color: #f1f5f9;
+  color: black;
+}
+
 svg {
   cursor: pointer;
 }
 .left_header .morocco-logo img {
   width: 100px;
-  height: 100px;
+  height: 80px;
   border-radius: 50%;
   margin: 0;
 }
 .righ_header {
   display: flex;
   align-items: center;
+  gap: 60px;
 }
 
 .righ_header > div {
@@ -72,7 +93,7 @@ svg {
   border-radius: 50%;
 }
 .profilUser {
-  border: 1px solid grey;
+  border: 2px solid white;
   background: transparent;
   cursor: pointer;
   border-radius: 999px;
