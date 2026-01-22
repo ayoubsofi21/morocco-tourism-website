@@ -14,13 +14,15 @@
     padding-top: 20px; 
     text-align: center;
     
+    
    
 }
-.titres1 h2{
+.tittre{
     font-weight:100;
      padding-top: 20px; 
      /* align-items: center; */
      text-align: center;
+     color:#276574;
 }
 /* .images .img1 {
     margin-right: 20px;
@@ -39,6 +41,7 @@
    width: 300px;
    height: 300px;
    margin-top: 10px;
+   
 }
 .image_1 img:hover{
 box-shadow: 2px 2px 7px black;
@@ -48,6 +51,7 @@ box-shadow: 2px 2px 7px black;
    width: 300px;
    height: 300px;
    margin-top: 10px;
+   
 }
 .image_2 img:hover{
     box-shadow: 2px 2px 7px black;
@@ -56,6 +60,7 @@ box-shadow: 2px 2px 7px black;
    width: 300px;
    height: 300px;
    margin-top: 10px;
+  
 }
 .image_3 img:hover{
     box-shadow: 2px 2px 7px black;
@@ -63,21 +68,26 @@ box-shadow: 2px 2px 7px black;
 .description1{
     margin-top: -5px;
     width: 300px;
-    height: 100px;
-    background-color: white;
+    height: 200px;
+    background-color: #276574;
+    border-radius: 0px 0px 20px 20px;
     
 }
 .description2{
     margin-top: -5px;
     width: 300px;
-    height: 100px;
-    background-color: white;
+    height: 200px;
+    background-color:#276574;
+ border-radius: 0px 0px 20px 20px;
+    
 }
 .description3{
     margin-top: -5px;
     width: 300px;
-    height: 100px;
-    background-color: white;
+    height: 200px;
+    background-color: #276574;
+     border-radius: 0px 0px 20px 20px;
+    
 }
 .down1{
     margin-top: 5px;
@@ -87,11 +97,20 @@ box-shadow: 2px 2px 7px black;
 }
 .description1 p{
     margin-top: 5px;
+    color: white;
 }
 .description1 span,.description2 span ,.description3 span{
     font-weight: bold;
 }
-
+.description2 p{
+    margin-top: 5px;
+    color: white;
+}
+.description3 p{
+    margin-top: 5px;
+    color: white;
+    margin-left: 10px;
+}
 
 .down2{
     margin-top: 5px;
@@ -106,6 +125,7 @@ box-shadow: 2px 2px 7px black;
 }
 .description2 span{
     margin-bottom: 50px;
+    ;
 }
 
 /* .Destination{
@@ -163,12 +183,18 @@ button a{
     padding-top: 200px;
    
 }
+.span1:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+
 .title1{
     width: 100%;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#276574;
 }
 .article_2{
     width: 100%;
@@ -180,8 +206,9 @@ button a{
    width: 300px;
    height: 300px;
    margin-top: 10px;
+ 
 }
-.photo1 img:hover{
+.photo1:hover{
 box-shadow: 2px 2px 7px black;
 
 }
@@ -189,6 +216,7 @@ box-shadow: 2px 2px 7px black;
    width: 300px;
    height: 300px;
    margin-top: 10px;
+   
 }
 .photo2 img:hover{
     box-shadow: 2px 2px 7px black;
@@ -197,6 +225,7 @@ box-shadow: 2px 2px 7px black;
    width: 300px;
    height: 300px;
    margin-top: 10px;
+   
 }
 .photo3 img:hover{
     box-shadow: 2px 2px 7px black;
@@ -204,21 +233,42 @@ box-shadow: 2px 2px 7px black;
 .des1{
     margin-top: -5px;
     width: 300px;
-    height: 100px;
-    background-color: white;
+    height: 200px;
+    background-color: #276574;
+     border-radius: 0px 0px 20px 20px;
     
+    
+}
+.span1{
+    color: white;
+}
+.des1 p{
+     margin-top: 5px;
+    color: white;
 }
 .des2{
     margin-top: -5px;
     width: 300px;
-    height: 100px;
-    background-color: white;
+    height: 200px;
+    background-color: #276574;
+     border-radius: 0px 0px 20px 20px;
+    
+}
+.des2 p{
+     margin-top: 5px;
+    color: white;
 }
 .des3{
     margin-top: -5px;
     width: 300px;
-    height: 100px;
-    background-color: white;
+    height: 200px;
+    background-color:  #276574;
+     border-radius: 0px 0px 20px 20px;
+    
+}
+.des3 p{
+     margin-top: 5px;
+    color: white;
 }
 .des1 p{
     margin-top: 5px;
@@ -240,4 +290,127 @@ box-shadow: 2px 2px 7px black;
     margin-top: 5px;
     display: flex;
     align-items: baseline;
+}
+.section_3{
+    width: 100%;
+    height: 500px;
+    
+    margin-top: 200px;
+    
+}
+.bigtitle{
+     width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#276574;
+
+}
+.article_3{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.gallery1 img{
+width: 300px;
+height: 300px;
+margin-top: 10px;
+
+
+}
+.gallery1 img:hover{
+box-shadow: 2px 2px 7px black;
+}
+.wasf1 p{
+    margin-top: 5px;
+}
+.wasf1 span,.wasf2 span ,.wasf3 span{
+    font-weight: bold;
+}
+
+
+
+.gallery2 img{
+width: 300px;
+height: 300px;
+margin-top: 10px;
+
+
+}
+.gallery2 img:hover{
+box-shadow: 2px 2px 7px black;
+}
+.wasf2 p{
+    margin-top: 5px;
+}
+
+.gallery3 img{
+width: 300px;
+height: 300px;
+margin-top: 10px;
+
+}
+.gallery3 img:hover{
+box-shadow: 2px 2px 7px black;
+}
+.wasf1 p{
+     margin-top: 5px;
+    color: white;
+}
+.wasf3 p{
+    margin-top: 5px;
+    color: white;
+}
+.wasf2{
+     margin-top: 5px;
+    color: white;
+}
+.asfal1{
+    margin-top: 5px;
+    display: flex;
+    align-items: baseline;
+}
+.asfal2{
+    margin-top: 5px;
+    display: flex;
+    align-items: baseline;
+}
+.asfal3{
+    margin-top: 5px;
+    display: flex;
+    align-items: baseline;
+}
+.wasf1{
+    margin-top: -5px;
+    width: 300px;
+    height: 200px;
+    background-color:  #276574;
+     border-radius: 0px 0px 20px 20px;
+    
+    
+}
+.wasf2{
+    margin-top: -5px;
+    width: 300px;
+    height: 200px;
+    background-color:  #276574;
+     border-radius: 0px 0px 20px 20px;
+    
+}
+.asfal2 span{
+    color: black;
+}
+.wasf3{
+    margin-top: -5px;
+    width: 300px;
+    height: 200px;
+    background-color:  #276574;
+     border-radius: 0px 0px 20px 20px;
+    
+}
+i{
+    color: rgb(220, 220, 17)
 }
