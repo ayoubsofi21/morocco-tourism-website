@@ -108,7 +108,7 @@ box-shadow: 2px 2px 7px black;
     margin-bottom: 50px;
 }
 
-.Destination{
+/* .Destination{
     width: 100px;
     height: 50px;
 }
@@ -123,29 +123,29 @@ box-shadow: 2px 2px 7px black;
 
 }
 .Login{
-  width: 100px;
-    height: 50px;
+  width: 100px; */
+    /* height: 50px;
   
-}
+} */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
-.navbar {
+/* .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 30px;
   background-color: rgb(248, 244, 232)  ;
   
-}
-header {
+} */
+/* header {
   border-top: 1px solid black;   
   border-bottom: 1px solid black; 
   margin-top: 20px;
   
-}
-button{
+} */
+/* button{
     border:none;
     background: none;
 
@@ -156,7 +156,7 @@ button a{
 }
 .visite{
     color: red;
-}
+} */
 .section_2{
     width: 100%;
     height:400px;
@@ -169,4 +169,75 @@ button a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.article_2{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.photo1{
+   width: 300px;
+   height: 300px;
+   margin-top: 10px;
+}
+.photo1 img:hover{
+box-shadow: 2px 2px 7px black;
+
+}
+.photo2 img{
+   width: 300px;
+   height: 300px;
+   margin-top: 10px;
+}
+.photo2 img:hover{
+    box-shadow: 2px 2px 7px black;
+}
+.photo3 img{
+   width: 300px;
+   height: 300px;
+   margin-top: 10px;
+}
+.photo3 img:hover{
+    box-shadow: 2px 2px 7px black;
+}
+.des1{
+    margin-top: -5px;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    
+}
+.des2{
+    margin-top: -5px;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+}
+.des3{
+    margin-top: -5px;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+}
+.des1 p{
+    margin-top: 5px;
+}
+.des1 span,.des2 span ,.des3 span{
+    font-weight: bold;
+}
+.bas1{
+    margin-top: 5px;
+    display: flex;
+    align-items: baseline;
+}
+.bas2{
+    margin-top: 5px;
+    display: flex;
+    align-items: baseline;
+}
+.bas3{
+    margin-top: 5px;
+    display: flex;
+    align-items: baseline;
 }
