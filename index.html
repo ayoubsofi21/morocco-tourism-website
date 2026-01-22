@@ -13,13 +13,13 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
-    <link rel="stylesheet" href="loginStyle.css" />
   </head>
   <body>
+    <div class="all-container">
     <header>
       <div class="left_header">
         <div class="morocco-logo">
-          <img src="/images/logo.png" alt="logotourist" />
+          <img src="images/newlogo.png" alt="logotourist" />
         </div>
       </div>
       <div class="righ_header">
@@ -31,9 +31,9 @@
             <li><a href="#">Details</a></li>
           </ul>
         </div>
-        <div class="profilUser">
+        <div class="profilUser" style="background-color: rgb(250, 255, 255);">
           <button type="button" class="icons">
-            <img src="/images/user.png" alt="user" />
+            <img src="images/user.png" alt="user" />
             <svg
               viewBox="0 0 48 48"
               fill="none"
@@ -73,19 +73,24 @@
       </div>
       <div class="clickDiv" style="display: none">
         <button type="button" class="sign-in">Sign In</button>
-        <button type="button" class="sign-up">SignUp</a>
+        <button type="button" class="sign-up">SignUp</button>
       </div>
     </header>
-    <div class="container">
-      <div id="SignUp" class="section1" style="display: none">
-        <div class="Sign-container">
+<main>
+    <nav>
+      <h1>Plan Your Moroccan Adventure Today</h1>
+
+    </nav>
+    <section id="SignUp" class="section1" style="display:none">
+        <section class="Sign-container">
           <h3>Ready to Start your <br />Success Story ?</h3>
           <p>Signup to our website and start your favorite day</p>
-          <form action="#">
+          <div class="form">
             <label for="fullname">Full name :</label><br />
             <input
               type="text"
               class="fullname"
+              name="fullname"
               placeholder="Ayoub Sofi"
             /><br />
             <label for="email">Email :</label><br />
@@ -118,14 +123,13 @@
             <div class="rederect-lien">
               <p>Have an account <button >Sign in</button></p>
             </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div id="SignUp" class="section2" style="display: none;">
+          </div>
+        </section>
+    </section>
+    <section class="container">
+      <div id="SignUp1" class="section2" style="display:none;">
         <div class="Sign-container">
-          <img src="/images/user.png" alt="userIcons" class="userIcons" />
+          <img src="images/user.png" alt="userIcons" class="userIcons" />
           <form action="#">
             <label for="email">Email :</label><br />
             <div class="input-group">
@@ -153,7 +157,8 @@
             <p>Don't have an account <a href="SignUp.html">Sign Up</a></p>
           </div>
         </div>
-      </div>
+    </section>
+</main>
     </div>
     <script>
       // click about user in header  and show button
