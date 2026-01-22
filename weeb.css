@@ -1,0 +1,172 @@
+.section_1{
+    margin-top: 40px;
+    width: 100%;
+    height: 500px;
+    /* background:url(zlij.jpg) no-repeat; */
+    background-size: cover;
+
+    
+
+}
+
+.titres1 h1 {
+ font-weight:100;
+    padding-top: 20px; 
+    text-align: center;
+    
+   
+}
+.titres1 h2{
+    font-weight:100;
+     padding-top: 20px; 
+     /* align-items: center; */
+     text-align: center;
+}
+/* .images .img1 {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 230px;
+  
+} */
+.article_1{
+    width: 100%;
+    height: 100px;
+   
+    display: flex;
+    justify-content: space-around;
+}
+.image_1 img{
+   width: 300px;
+   height: 300px;
+   margin-top: 10px;
+}
+.image_1 img:hover{
+box-shadow: 2px 2px 7px black;
+
+}
+.image_2 img{
+   width: 300px;
+   height: 300px;
+   margin-top: 10px;
+}
+.image_2 img:hover{
+    box-shadow: 2px 2px 7px black;
+}
+.image_3 img{
+   width: 300px;
+   height: 300px;
+   margin-top: 10px;
+}
+.image_3 img:hover{
+    box-shadow: 2px 2px 7px black;
+}
+.description1{
+    margin-top: -5px;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    
+}
+.description2{
+    margin-top: -5px;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+}
+.description3{
+    margin-top: -5px;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+}
+.down1{
+    margin-top: 5px;
+    display: flex;
+    align-items: baseline;
+    
+}
+.description1 p{
+    margin-top: 5px;
+}
+.description1 span,.description2 span ,.description3 span{
+    font-weight: bold;
+}
+
+
+.down2{
+    margin-top: 5px;
+    display: flex;
+    align-items: baseline;
+    
+}
+.down3{
+     margin-top: 5px;
+    display: flex;
+    align-items: baseline;
+}
+.description2 span{
+    margin-bottom: 50px;
+}
+
+.Destination{
+    width: 100px;
+    height: 50px;
+}
+.Activités{
+    width: 100px;
+    height: 50px;
+
+}
+.Details{
+    width: 100px;
+    height: 50px;
+
+}
+.Login{
+  width: 100px;
+    height: 50px;
+  
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: rgb(248, 244, 232)  ;
+  
+}
+header {
+  border-top: 1px solid black;   
+  border-bottom: 1px solid black; 
+  margin-top: 20px;
+  
+}
+button{
+    border:none;
+    background: none;
+
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+.visite{
+    color: red;
+}
+.section_2{
+    width: 100%;
+    height:400px;
+    padding-top: 200px;
+   
+}
+.title1{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
