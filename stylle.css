@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background: #ffffff;
+    padding: 20px 40px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.sub-info {
+    display: flex;
+    gap: 20px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 140px 1fr 340px;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+
+.left-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-gallery img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.voir-plus {
+    padding: 8px 0;
+    background: rgba(0,0,0,0.85);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.main-photo {
+    position: relative;
+}
+.main-photo .hero {
+    width: 100%;
+    height: 433px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+
+.booking {
+    padding: 20px;
+    height: 433px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.booking h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.price {
+    color:#276574;
+    font-weight: bold;
+}
+
+.booking label {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.booking input,
+.booking select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+#Titre{
+    color: #276574;
+}
+
+.btn-check {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background:#276574;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.details {
+    margin-top: 20px;
+    color: #444;
+    font-size: 14px;
+}
+.details li {
+    margin-bottom: 8px;
+}

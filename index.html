@@ -1,86 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head class="navbar">
+<html lang="fr">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tor-web</title>
-    <link rel="stylesheet" href="style.css">
+    <title>kechActivité</title>
+    <link rel="stylesheet" href="stylle.css">
 </head>
+<body>
 
- <main class="container">
+<header>
+    <h1 id="Titre">MARAKECH : Quad, Chameau, Dîner & Spectacle</h1>
+    <div class="sub-info">
+        <p> 863 avis</p>
+        <p> Recommandé par 99% des voyageurs</p>
+        <p> Badge d'excellence</p>
+    </div>
+</header>
 
-      
-        <section class="top-section">
+<div class="layout">
 
-        
-            <div class="images-grid">
-                <img src="gg.jpg" class="big">
-                <img src="">
-                <img src="sahara.jpg">
-                <img src="cc.jpg">
-            </div>
+    <aside class="left-gallery">
+        <img src="sahara.jpg">
+        <img src="cc.jpg">
+        <img src="gg.jpg">
+        <img src="quad.webp">
+        <button class="voir-plus">Voir plus</button>
+    </aside>
 
-          
-            <div class="reservation-box">
-                <h3>From 159.35 MAD per person</h3>
-
-                <label>Date</label>
-                <input type="date">
-
-                <label>Travelers</label>
-                <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option selected>4</option>
-                </select>
-
-                <button class="btn">check availability</button>
-
-                <ul class="notes">
-                    <li> Cancel 24h before the start</li>
-                    <li> Secure payment</li>
-                </ul>
-            </div>
-
-        </section>
-
-     
-        <section class="description">
-            <h2>Découverte du désert marocain et visite des kasbahs anciennes</h2>
-
-            <p>
-                Découvrez les paysages magnifiques du désert marocain, explorez les kasbahs anciennes 
-                et profitez d’une balade à dos de chameau avec un guide local…
-            </p>
-
-          
-            <div class="inclus-grid">
-
-                <div class="box">
-                    <h3>Ce qui est inclus</h3>
-                    <ul>
-                        <li> Balade à dos de chameau</li>
-                        <li> Guide local</li>
-                        <li> Dîner traditionnel marocain</li>
-                        <li> Eau en bouteille</li>
-                    </ul>
-                </div>
-
-                <div class="box">
-                    <h3>Ce qui n’est pas inclus</h3>
-                    <ul>
-                        <li> Dépenses personnelles</li>
-                        <li> Pourboires</li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </section>
-
+ 
+    <main class="main-photo">
+        <img src="kech.webp" class="hero">
+   
     </main>
 
-    
+
+    <aside class="booking">
+
+        <h2>
+            À partir de 
+            <span class="price">25,61 €</span> 
+            par personne
+        </h2>
+
+        <label>Date</label>
+        <input type="date">
+
+        <label>Voyageurs</label>
+        <select>
+            <option>1 voyageur</option>
+            <option>2 voyageurs</option>
+            <option>3 voyageurs</option>
+        </select>
+
+        <button class="btn-check">Vérifier la disponibilité</button>
+
+        <ul class="details">
+            <li> Annulation gratuite jusqu'à 24h avant</li>
+            <li>Réservez maintenant, payez plus tard</li>
+        </ul>
+
+    </aside>
+
+</div>
+
 </body>
 </html>
