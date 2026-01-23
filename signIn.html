@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viator Website</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -13,10 +13,9 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
-  </head>
 
-  <body>
-    <div class="all-container">
+</head>
+<body>
     <header>
       <div class="left_header">
         <div class="morocco-logo">
@@ -77,58 +76,9 @@
         <a href="signUp.html">SignUp</a>
       </div>
     </header>
-<main>
-    <nav>
-      <h1>Plan Your Moroccan Adventure Today</h1>
-
-    </nav>
-    <section id="SignUp" class="section1" style="display:none">
-        <section class="Sign-container">
-          <h3>Ready to Start your <br />Success Story ?</h3>
-          <p>Signup to our website and start your favorite day</p>
-          <div class="form">
-            <label for="fullname">Full name :</label><br />
-            <input
-              type="text"
-              class="fullname"
-              name="fullname"
-              placeholder="Ayoub Sofi"
-            /><br />
-            <label for="email">Email :</label>
-            <div class="input-group">
-              <i class="fi fi-rr-envelope" class="email-icon"></i>
-              <input
-                type="email"
-                class="email"
-                placeholder="exemple@gmail.com"
-                name="email"
-              />
-            </div>
-
-            <label for="password">password :</label><br />
-            <div class="input-group">
-              <i class="fi fi-rr-eye"></i>
-              <input
-                type="password"
-                class="password"
-                name="password"
-                placeholder="**************"
-              /><br />
-            </div>
-            <div class="input-condition">
-              <input type="radio" /><label
-                ><span>I agree to the</span> Terms & Conditions</label
-              ><br />
-              <button type="button" class="button-signup">Sign Up</button>
-            </div>
-            <div class="rederect-lien">
-              <p>Have an account <button >Sign in</button></p>
-            </div>
-          </div>
-        </section>
-    </section>
-    <section class="container">
-      <div id="SignUp1" class="section2" style="display:none;">
+    <main>
+        <section class="container">
+      <div id="SignUp1" class="section2">
         <div class="Sign-container sign-in">
           <img src="images/user.png" alt="userIcons" class="userIcons" />
           <div class="form ">
@@ -159,30 +109,7 @@
           </div>
         </div>
     </section>
-</main>
-    </div>
-    <script>
-     
-      // //  Show sign-in section when button is clicked
-      // const section1 = document.querySelector(".section1");
-      // document.querySelector(".sign-in").addEventListener("click", () => {
-      //   section1.style.display =
-      //     section1.style.display === "block" ? "none" : "flex";
-      // });
-      // const section2 = document.querySelector(".section2");
-
-      // document.querySelector(".sign-up").addEventListener("click", () => {
-        
-      //   section2.style.display =
-      //     section2.style.display === "block" ? "none" : "flex";
-      // });
-      // // if(section1.style.display==='block'){
-      // //   section2.style.display==='none'
-      // // }else{
-      // //   section1.style.display==='none'
-      // // }
-    </script>
+    </main>
     <script src="script.js"></script>
-
 </body>
 </html>
