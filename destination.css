@@ -10,10 +10,214 @@ body {
   background: #f8f6f2;
   padding: 40px;
 }
+/* header */
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  background: #f8fafc;
+  color: #111827;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.all-container {
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+.all-container nav {
+  width: 100%;
+  height: 60%;
+  align-items: flex-start;
+}
+nav h1 {
+  color: white;
+  font-size: 50px;
+}
+
+header .left_header,
+.right_header {
+  display: flex;
+  align-items: center;
+}
+header .center ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: end;
+}
+header .center ul li {
+  background-color: #276574;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+header .center ul li a {
+  margin: 0px 2px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+
+  justify-content: space-between;
+}
+header .center ul li:hover,
+header .center ul li a:hover {
+  background-color: #f1f5f9;
+  color: black;
+}
+
+svg {
+  cursor: pointer;
+}
+.left_header .morocco-logo img {
+  width: 100px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0;
+}
+.righ_header {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.righ_header > div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.righ_header button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+}
+.profilUser {
+  border: 2px solid rgb(140, 123, 123);
+  background: transparent;
+  cursor: pointer;
+  border-radius: 999px;
+}
+.profilUser button {
+  background: transparent;
+  border-radius: 999px;
+  cursor: pointer;
+  padding: 2px 2px;
+}
+.profilUser:hover {
+  background: #f1f5f9;
+}
+
+.icon {
+  fill: #111827;
+}
+button.icons {
+  display: flex;
+  align-items: center;
+}
+button.icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding-left: 4px;
+}
+#menu-icon {
+  display: none;
+}
+@media (max-width: 768px) {
+  header {
+    gap: 10px;
+    display: flex;
+  }
+  header > div {
+    gap: 20px;
+  }
+  header .discoverbutton,
+  header .icon1 {
+    display: none;
+  }
+  #menu-icon {
+    display: block;
+    font-size: 30px;
+  }
+  .inputGroup.labelinput,
+  .search-btn {
+    display: none;
+  }
+  .profilUser {
+    border: none;
+  }
+}
+.clickDiv {
+  position: absolute;
+  top: 70px;
+  right: 24px;
+  width: 200px;
+  background: none;
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  display: none;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.clickDiv a {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #111827;
+  text-align: center;
+}
+
+.clickDiv a:hover {
+  background: #f1f5f9;
+}
+header .clickDiv .sign-up,
+.sign-in {
+  background-color: #276574;
+  color: white;
+  font-weight: 700;
+  padding: 10px 3rem;
+  text-align: center;
+  margin: 5px 1rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  border: none;
+}
+/* ========== */
 
 .destinations h2 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
   color: #1e3a8a;
   margin-bottom: 5px;
 }
@@ -52,11 +256,15 @@ body {
 }
 
 .card-content h3 {
+  display: flex;
+  justify-content: center;
   color: #1e3a8a;
   margin-bottom: 8px;
 }
 
 .card-content p {
+
+  text-align: center;
   font-size: 14px;
   color: #666;
   margin-bottom: 15px;
@@ -65,6 +273,7 @@ body {
 .card-footer {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
