@@ -128,7 +128,33 @@ button.icons img {
 #menu-icon {
   display: none;
 }
+.menu-btn {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .righ_header {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    text-align: center;
+  }
 
+  .nav.active {
+    display: flex;
+  }
+
+  .menu-btn {
+    justify-content: flex-start;
+    font-size: 60px;
+    display: block;
+  }
+}
 /* ========== */
 
 .destinations h2 {
