@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -144,7 +144,7 @@ button.icons img {
 #menu-icon {
     display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 551px) {
     header {
         gap: 10px;
         display: flex;
@@ -329,20 +329,128 @@ header h1 {
     text-align: center;
 }
 .includ {
-   
-    color:black;
+    color: black;
     width: 100%;
     border-radius: 20px;
-     justify-content: center;
+    justify-content: center;
     align-items: center;
-     
 }
 
 .includ h4 {
-  margin: 20px;
+    margin: 20px;
     font-size: 28px;
-  color: #276574;
-     justify-content: center;
+    color: #276574;
+    justify-content: center;
     align-items: center;
-      display: flex;
+    display: flex;
 }
+
+
+@media (max-width: 1024px) {
+    .layout {
+        grid-template-columns: 120px 1fr;
+        grid-template-areas:
+            "left-gallery main-photo"
+            "left-gallery main-photo"
+            "booking booking";
+        gap: 20px;
+    }
+
+    .booking {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header .center ul {
+        display: none; 
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    nav h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .sub-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+ 
+    .layout {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .left-gallery {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .left-gallery img {
+        min-width: 110px;
+        height: 93px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        width: 40px;
+    }
+
+    .voir-plus {
+        display: none;
+    }
+
+    .main-photo .hero {
+        height: 250px;
+    }
+
+    .booking {
+        order: -1; 
+        width: 100%;
+    }
+
+    .discription h3,
+    .includ h4 {
+        font-size: 22px;
+    }
+
+    .discription p {
+        padding: 0 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    nav h1 {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .booking input,
+    .booking select {
+        padding: 10px;
+    }
+
+    .btn-check {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .main-photo .hero {
+        height: 393px;
+        width: 125%;
+    }
+}
+
