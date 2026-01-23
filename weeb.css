@@ -343,9 +343,16 @@ body {
 
 .section_2{
     width: 100%;
-    height:400px;
+    height:600px;
     padding-top: 200px;
+     overflow-x: scroll;
+     margin-left: 10px;
+
    
+}
+
+.section_2::-webkit-scrollbar{
+  display: none;
 }
 .span1:hover{
 text-decoration: underline;
@@ -365,6 +372,7 @@ cursor: pointer;
     height: 100px;
     display: flex;
     justify-content: space-around;
+    gap: 20px;
 }
 .photo1{
    width: 300px;
@@ -458,9 +466,9 @@ box-shadow: 2px 2px 7px black;
 .section_3{
     width: 100%;
     height: 500px;
-    
-    margin-top: 200px;
-    
+   margin-top: 200px;
+    overflow-x: scroll;
+    margin-left: 10px;
 }
 .bigtitle{
      width: 100%;
