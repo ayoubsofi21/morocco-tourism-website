@@ -3,32 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-body {
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
-  background: #f8fafc;
-  color: #111827;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  gap: 14px;
-}
-
 .all-container {
   width: 100%;
   background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
@@ -55,92 +29,94 @@ nav h1 {
   font-size: 50px;
 }
 
-header .left_header,
-header .right_header,
-header .righ_header {
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  background: #f8fafc;
+  color: #111827;
+}
+
+.site-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 8px;
+}
+
+.left_header {
   display: flex;
   align-items: center;
 }
 
-header .center ul {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-  justify-content: end;
-  flex-wrap: wrap;
-}
-
-header .center ul li {
-  background-color: #276574;
-  padding: 10px 15px;
-  border-radius: 15px;
-}
-
-header .center ul li a {
-  margin: 0 2px;
-  padding: 10px 15px;
-  text-decoration: none;
-  font-weight: 600;
-  color: #fff;
-  display: inline-block;
-}
-
-header .center ul li:hover {
-  background-color: #f1f5f9;
-}
-
-header .center ul li:hover a {
-  color: #000;
-}
-
-svg {
-  cursor: pointer;
-}
-
-.left_header .morocco-logo img {
+.morocco-logo img {
   width: 100px;
   height: 80px;
   border-radius: 50%;
-  margin: 0;
+  display: block;
 }
 
 .righ_header {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 18px;
+  position: relative;
 }
 
-.righ_header > div {
+.center ul {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
+  list-style: none;
 }
 
-.righ_header button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 6px;
-  border-radius: 50%;
+.center ul li {
+  background: #276574;
+  border-radius: 14px;
+}
+
+.center ul li a {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+}
+
+.center ul li:hover {
+  background: #f1f5f9;
+}
+
+.center ul li:hover a {
+  color: #000;
 }
 
 .profilUser {
   border: 2px solid rgb(140, 123, 123);
-  background: transparent;
-  cursor: pointer;
   border-radius: 999px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 6px;
 }
 
 .profilUser button {
+  border: none;
   background: transparent;
-  border-radius: 999px;
   cursor: pointer;
-  padding: 2px 2px;
-}
-
-.profilUser:hover {
-  background: #f1f5f9;
+  padding: 4px 6px;
+  border-radius: 999px;
 }
 
 button.icons {
@@ -152,60 +128,145 @@ button.icons img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  padding-left: 4px;
+  display: block;
 }
 
-#menu-icon {
-  display: none;
+.icon1 svg path {
+  fill: #111;
 }
 
 .clickDiv {
   position: absolute;
-  top: 70px;
-  right: 24px;
-  width: 200px;
-  background: none;
-  border-radius: 14px;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 100px;
   display: none;
   flex-direction: column;
+  gap: 8px;
   z-index: 999;
 }
 
 .clickDiv a {
-  padding: 12px 16px;
-  font-weight: 500;
+  width: 80px;
+  padding: 6px 6px;
+  font-weight: 700;
   text-decoration: none;
   color: #fff;
-  font-size: large;
-  background-color: #276574;
+  background: #276574;
+  border-radius: 18px;
   text-align: center;
-  border-radius: 20px;
-  margin-bottom: 5px;
+  justify-content: end;
 }
 
-header:has(.profilUser:hover) .clickDiv,
-header:has(.profilUser:focus-within) .clickDiv {
+.clickDiv a:hover {
+  background: #f1f5f9;
+  color: #000;
+}
+
+.profilUser:hover + .clickDiv,
+.profilUser:focus-within + .clickDiv {
   display: flex;
 }
 
-header .clickDiv .sign-up,
-header .clickDiv .sign-in {
-  background-color: #276574;
-  color: #fff;
-  font-weight: 700;
-  padding: 10px 3rem;
-  text-align: center;
-  margin: 5px 1rem;
-  display: flex;
+.nav-toggle {
+  display: none;
+}
+
+.nav-btn {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  cursor: pointer;
+  align-items: center;
   justify-content: center;
-  border-radius: 20px;
-  border: none;
+  gap: 6px;
+  flex-direction: column;
+  background: #276574;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Poppins", sans-serif;
+.nav-btn span {
+  width: 22px;
+  height: 2px;
+  background: #fff;
+  display: block;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 12px;
+  }
+
+  .morocco-logo img {
+    width: 78px;
+    height: 60px;
+  }
+
+  .nav-btn {
+    display: flex;
+    justify-self: end;
+  }
+
+  .righ_header {
+    grid-column: 1 / -1;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding-top: 8px;
+  }
+
+  .center ul {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .center ul li a {
+    width: 100%;
+    text-align: center;
+    padding: 12px 14px;
+  }
+
+  .profilUser {
+    width: max-content;
+    margin: 0 auto;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .clickDiv {
+    position: static;
+    width: min(320px, 92%);
+    margin: 0 auto;
+  }
+
+  .profilUser:hover + .clickDiv,
+  .profilUser:focus-within + .clickDiv {
+    display: flex;
+  }
+
+  .nav-toggle:checked ~ .righ_header {
+    display: flex;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav-btn {
+    width: 42px;
+    height: 42px;
+  }
+
+  button.icons img {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .Sign-container {
@@ -226,11 +287,14 @@ h3 {
 }
 
 .Sign-container.sign-in {
-  width: 400px;
+  width: 500px;
   background-color: #f7fff2;
   text-align: center;
   border-radius: 14px;
   padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Sign-container h3 {
@@ -239,7 +303,7 @@ h3 {
 
 .Sign-container p {
   color: #5c5e5a;
-  width: 200px;
+  width: 210px;
   text-align: center;
   padding: 1rem;
   margin: 0 auto;
