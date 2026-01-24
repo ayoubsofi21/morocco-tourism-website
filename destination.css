@@ -1,4 +1,6 @@
+
 * {
+<<<<<<< HEAD:style.css
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -27,14 +29,34 @@ header {
   align-items: center;
   padding: 10px 20px;
   gap: 14px;
+=======
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f8f6f2;
+  padding: 40px;
+}
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+>>>>>>> origin/feauture-destination:destination.css
 }
 
 .all-container {
   width: 100%;
+<<<<<<< HEAD:style.css
   background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+=======
+
+>>>>>>> origin/feauture-destination:destination.css
   justify-content: center;
   position: absolute;
   height: 100vh;
@@ -43,15 +65,23 @@ header {
   left: 50%;
   text-align: center;
 }
+<<<<<<< HEAD:style.css
 
+=======
+>>>>>>> origin/feauture-destination:destination.css
 .all-container nav {
   width: 100%;
   height: 60%;
   align-items: flex-start;
 }
+<<<<<<< HEAD:style.css
 
 nav h1 {
   color: #fff;
+=======
+nav h1 {
+  color: white;
+>>>>>>> origin/feauture-destination:destination.css
   font-size: 50px;
 }
 
@@ -158,6 +188,7 @@ button.icons img {
 #menu-icon {
   display: none;
 }
+<<<<<<< HEAD:style.css
 
 .clickDiv {
   position: absolute;
@@ -506,4 +537,116 @@ h3 {
   .clickDiv a {
     font-size: 16px;
   }
+=======
+.menu-btn {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .righ_header {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .menu-btn {
+    justify-content: flex-start;
+    font-size: 60px;
+    display: block;
+  }
+}
+/* ========== */
+
+.destinations h2 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  color: #1e3a8a;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  display: flex;
+  justify-content: center;
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn.green {
+  background: #666;
+}
+
+
+.card-footer a {
+  font-size: 13px;
+  color: #2563eb;
+  text-decoration: none;
+>>>>>>> origin/feauture-destination:destination.css
 }
