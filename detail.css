@@ -1,0 +1,234 @@
+.sub-info {
+  display: flex;
+  gap: 20px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 140px 1fr 340px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.left-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.left-gallery img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.voir-plus {
+  padding: 8px 0;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.main-photo {
+  position: relative;
+}
+.main-photo .hero {
+  width: 100%;
+  height: 433px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.booking {
+  padding: 20px;
+  height: 433px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.booking h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.price {
+  color: #276574;
+  font-weight: bold;
+}
+
+.booking label {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.booking input,
+.booking select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+#Titre {
+  color: #276574;
+}
+
+.btn-check {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  background: #276574;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.details {
+  margin-top: 20px;
+  color: #444;
+  font-size: 14px;
+}
+.details li {
+  margin-bottom: 8px;
+}
+.discription {
+  width: 100%;
+}
+.discription h3 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 28px;
+  color: #276574;
+}
+.discription p {
+  text-align: center;
+}
+.includ {
+  color: black;
+  width: 100%;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.includ h4 {
+  margin: 20px;
+  font-size: 28px;
+  color: #276574;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 120px 1fr;
+    grid-template-areas:
+      "left-gallery main-photo"
+      "left-gallery main-photo"
+      "booking booking";
+    gap: 20px;
+  }
+
+  .booking {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header .center ul {
+    display: none;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  nav h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .sub-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .layout {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .left-gallery {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+
+  .left-gallery img {
+    min-width: 110px;
+    height: 93px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    width: 40px;
+  }
+
+  .voir-plus {
+    display: none;
+  }
+
+  .main-photo .hero {
+    height: 250px;
+  }
+
+  .booking {
+    order: -1;
+    width: 100%;
+  }
+
+  .discription h3,
+  .includ h4 {
+    font-size: 22px;
+  }
+
+  .discription p {
+    padding: 0 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  nav h1 {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .booking input,
+  .booking select {
+    padding: 10px;
+  }
+
+  .btn-check {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .main-photo .hero {
+    height: 393px;
+    width: 125%;
+  }
+}

@@ -1,0 +1,573 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.all-container {
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  position: absolute;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+.all-container nav {
+  width: 100%;
+  height: 60%;
+  align-items: flex-start;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 50px;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  background: #f8fafc;
+  color: #111827;
+}
+
+.site-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 8px;
+}
+
+.left_header {
+  display: flex;
+  align-items: center;
+}
+
+.morocco-logo img {
+  width: 100px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+}
+
+.righ_header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+}
+
+.center ul {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  list-style: none;
+}
+
+.center ul li {
+  background: #276574;
+  border-radius: 14px;
+}
+
+.center ul li a {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+}
+
+.center ul li:hover {
+  background: #f1f5f9;
+}
+
+.center ul li:hover a {
+  color: #000;
+}
+
+.profilUser {
+  border: 2px solid rgb(140, 123, 123);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 6px;
+}
+
+.profilUser button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 999px;
+}
+
+button.icons {
+  display: flex;
+  align-items: center;
+}
+
+button.icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+}
+
+.icon1 svg path {
+  fill: #111;
+}
+
+.clickDiv {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 100px;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 999;
+}
+
+.clickDiv a {
+  width: 80px;
+  padding: 6px 6px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  background: #276574;
+  border-radius: 18px;
+  text-align: center;
+  justify-content: end;
+}
+
+.clickDiv a:hover {
+  background: #f1f5f9;
+  color: #000;
+}
+
+.profilUser:hover + .clickDiv,
+.profilUser:focus-within + .clickDiv {
+  display: flex;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-btn {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-direction: column;
+  background: #276574;
+}
+
+.nav-btn span {
+  width: 22px;
+  height: 2px;
+  background: #fff;
+  display: block;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 12px;
+  }
+
+  .morocco-logo img {
+    width: 78px;
+    height: 60px;
+  }
+
+  .nav-btn {
+    display: flex;
+    justify-self: end;
+  }
+
+  .righ_header {
+    grid-column: 1 / -1;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding-top: 8px;
+  }
+
+  .center ul {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .center ul li a {
+    width: 100%;
+    text-align: center;
+    padding: 12px 14px;
+  }
+
+  .profilUser {
+    width: max-content;
+    margin: 0 auto;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .clickDiv {
+    position: static;
+    width: min(320px, 92%);
+    margin: 0 auto;
+  }
+
+  .profilUser:hover + .clickDiv,
+  .profilUser:focus-within + .clickDiv {
+    display: flex;
+  }
+
+  .nav-toggle:checked ~ .righ_header {
+    display: flex;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav-btn {
+    width: 42px;
+    height: 42px;
+  }
+
+  button.icons img {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.Sign-container {
+  width: 500px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  top: 12rem;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0px;
+  background-color: #f7fff2;
+  border-radius: 14px;
+}
+
+.Sign-container.sign-in {
+  width: 500px;
+  background-color: #f7fff2;
+  text-align: center;
+  border-radius: 14px;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Sign-container h3 {
+  color: #000;
+}
+
+.Sign-container p {
+  color: #5c5e5a;
+  width: 210px;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.Sign-container .form {
+  padding: 1rem 2rem;
+  text-align: start;
+}
+
+.Sign-container .form .fullname,
+.Sign-container .form .email,
+.Sign-container .form .password {
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  width: 100%;
+  height: 2.3rem;
+  background-color: #f7fff2;
+}
+
+.Sign-container .form .input-group {
+  position: relative;
+  width: 100%;
+}
+
+.Sign-container .form i {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  color: rgb(211, 212, 213);
+}
+
+.form .input-condition {
+  padding-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.form .input-condition .button-signIn {
+  margin: 0;
+}
+
+.form .input-condition button {
+  padding: 0.8rem 3.5rem;
+  border: none;
+  background-color: #8bbfcc;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 30px;
+  margin-top: 2rem;
+  width: 80%;
+  font-size: 30;
+}
+
+.form .input-condition button:hover {
+  background-color: #276574;
+}
+
+.Sign-container .form label {
+  color: #1d1e1d;
+}
+
+.Sign-container .form label span {
+  color: #5c5e5a;
+  margin-left: 5px;
+}
+
+.Sign-container .form span {
+  color: #333;
+}
+
+.Sign-container .userIcons {
+  width: 50px;
+  height: 50px;
+}
+
+.rederect-lien p {
+  font-size: small;
+}
+
+@media (max-width: 992px) {
+  header {
+    padding: 10px 14px;
+  }
+
+  .righ_header {
+    gap: 22px;
+  }
+
+  header .center ul {
+    gap: 14px;
+  }
+
+  header .center ul li {
+    padding: 8px 10px;
+  }
+
+  header .center ul li a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .left_header .morocco-logo img {
+    width: 86px;
+    height: 66px;
+  }
+
+  .clickDiv {
+    right: 14px;
+    top: 68px;
+    width: 190px;
+  }
+
+  nav h1 {
+    font-size: 40px;
+  }
+
+  .Sign-container {
+    /* width: min(92%, 520px); */
+    width: 100%;
+    height: 100vh;
+  }
+
+  .Sign-container.sign-in {
+    width: min(92%, 440px);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .left_header {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .righ_header,
+  .right_header {
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  header .center ul {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  header .center ul li {
+    border-radius: 12px;
+    padding: 8px 10px;
+  }
+
+  header .center ul li a {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .profilUser {
+    border: none;
+  }
+
+  .clickDiv {
+    top: 120px;
+    right: 12px;
+    width: 180px;
+  }
+
+  nav h1 {
+    font-size: 34px;
+    padding: 0 12px;
+  }
+
+  .Sign-container {
+    width: min(92%, 520px);
+    padding-bottom: 18px;
+  }
+
+  .Sign-container .form {
+    padding: 1rem 1.2rem;
+  }
+
+  .form .input-condition button {
+    width: 90%;
+    padding: 0.7rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 12px;
+  }
+
+  .righ_header,
+  .right_header {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .center {
+    width: 100%;
+  }
+
+  .center ul {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .center ul li {
+    padding: 8px 10px;
+    border-radius: 12px;
+  }
+
+  .center ul li a {
+    font-size: 13px;
+  }
+
+  .profilUser {
+    border: none;
+  }
+
+  .clickDiv {
+    right: 50%;
+    transform: translateX(50%);
+    width: 220px;
+  }
+
+  nav h1 {
+    font-size: 32px;
+  }
+  .Sign-container {
+    position: relative;
+    margin: 18px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .left_header .morocco-logo img {
+    width: 74px;
+    height: 58px;
+  }
+  button.icons img {
+    width: 34px;
+    height: 34px;
+  }
+  nav h1 {
+    font-size: 26px;
+  }
+  .clickDiv {
+    width: 210px;
+  }
+  .clickDiv a {
+    font-size: 16px;
+  }
+}
